@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://api.staging.zureltrax.com/zvls/api/v3/web/dashboards/sites/60aa76714a4b082632488cc4/visitors/export-pdf'
+  apiUrl: 'SET_YOUR_API_URL'
 };
 
 /*
