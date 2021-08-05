@@ -22,7 +22,7 @@ export class MainService {
     // set http headers as per needed
     let headers = new HttpHeaders();
     headers = headers.append('Content-Type', 'application/json');
-    headers = headers.append('Accept', 'application/json');
+    // headers = headers.append('Accept', 'application/json');
 
     /**
      * Note: you can set header using interceptor, here i added manually
