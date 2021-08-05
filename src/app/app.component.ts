@@ -42,7 +42,9 @@ export class AppComponent implements OnInit {
     this.service.getEncodedResponseForDownload(cid, signInTime, leaveingTime, uid, accessToken, idToken).subscribe((data: HttpResponse<Blob>) => {
       const fileName = data.headers.get('content-disposition').split(' ')[1].split('=')[1];
       this.downloadFile(data.body, `${fileName}`);
+      alert('Download successfull !!');
     }, error => {
+      alert('Couldn\'t download file. Something went wrong !!');
       console.log('error: ', error);
     });
   }
