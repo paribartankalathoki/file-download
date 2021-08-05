@@ -52,4 +52,8 @@ export class AppComponent implements OnInit {
     FileSaver.saveAs(pdfUrl, pdfName);
   }
 
+  downloadPdfUsingFileSaver(path, name) {
+    this.downloadFile(path, name);
+  }
+
 }
